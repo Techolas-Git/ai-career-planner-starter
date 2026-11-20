@@ -7,6 +7,7 @@ built by you and an AI coding assistant (GitHub Copilot).
 1. Click the green **Code** button → **Codespaces** → **Create codespace on main**. Wait ~2 minutes.
 2. A preview of your app opens on the right. You should see "Hello!".
    No preview? Open the **Ports** tab at the bottom and click the globe next to port 8501.
+   App not running? In the terminal type: `python -m streamlit run app.py --server.headless true`
 3. Open **Copilot Chat** (the chat icon at the top or in the side bar) and switch it to **Agent** mode.
    Paste **Card 1** from `PROMPTS.md`. Press **Keep** to accept the change.
 4. Get a free key at https://aistudio.google.com/apikey (sign in with Gmail → **Create API key** → copy).
