@@ -5,8 +5,8 @@
     "codespaces": { "openFiles": ["PROMPTS.md", "app.py"] },
     "vscode": { "extensions": ["ms-python.python", "GitHub.copilot", "GitHub.copilot-chat"] }
   },
-  "updateContentCommand": "pip install --user --timeout 90 --retries 3 -r requirements.txt || echo 'INSTALL DID NOT FINISH. In the terminal run: pip install --user --timeout 90 -r requirements.txt'",
-  "postAttachCommand": "python -m streamlit run app.py --server.headless true --server.enableCORS false --server.enableXsrfProtection false",
+  "updateContentCommand": "pip install --user --timeout 90 --retries 3 -r requirements.txt || true",
+  "postAttachCommand": "pip install --user --timeout 90 --retries 5 -q -r requirements.txt && python -m streamlit run app.py --server.headless true --server.enableCORS false --server.enableXsrfProtection false",
   "portsAttributes": { "8501": { "label": "My AI app", "onAutoForward": "openPreview" } },
   "forwardPorts": [8501]
 }
